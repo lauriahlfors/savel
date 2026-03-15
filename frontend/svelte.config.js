@@ -11,8 +11,11 @@ const config = {
 	kit: {
 		adapter: adapter({
 			fallback: 'index.html',
-		}),
-	},
+        }),
+        alias: {
+            "@/*": "./path/to/lib/*",
+        },
+    },
 };
 
 export default config;
